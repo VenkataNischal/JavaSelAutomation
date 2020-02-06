@@ -1,0 +1,13 @@
+package signinFlow;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Signin {
+	
+	WebDriver driver;
+	
+	By CreateYourAccount = By.id("//*[@id='email']");
+	
+	
+}

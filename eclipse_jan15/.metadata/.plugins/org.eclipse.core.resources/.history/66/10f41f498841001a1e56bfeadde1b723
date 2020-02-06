@@ -1,0 +1,28 @@
+package coreProgram1;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class FirstTest {
+	
+	@Test
+	
+	public void gTest()
+	
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Venkata Nischal\\Desktop\\Softwares\\ChromeDriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.google.com");
+		
+		String title = driver.getTitle();
+		System.out.println("google title is: "+title);
+		
+		Assert.assertEquals(title,"Google");
+		
+		driver.quit();
+		
+	}
+
+}

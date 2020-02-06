@@ -1,0 +1,21 @@
+package signinFlow;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Signin {
+	
+	WebDriver driver;
+	
+	By Email = By.id("//*[@id='email']");
+	
+	By Password = By.id("//*[@id='password']");
+	
+	
+	By Signin = By.xpath("//input[@type='submit']").linkText("Sign In");
+	
+	By Clear= By.xpath("//input[@type='button']");
+	
+	
+	
+}

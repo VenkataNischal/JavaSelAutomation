@@ -1,0 +1,32 @@
+package coreProgramTest;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class FirstTestBookMyFurniture {
+	
+	
+	@Test
+	
+	public void bookMyFurniture() {
+		
+		System.setProperty("webdriver.chrome.driver", "C:/Users/Venkata Nischal/Desktop/chromedriver.exe");
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		
+		driver.get("http:okmry52647dns.eastus.cloudapp.azure.com:9090");
+		
+		String title = driver.getTitle();
+		System.out.println("book Title="+title);
+		
+		Assert.assertEquals(title,"Book My Furniture");
+	
+		driver.quit();
+		
+	}
+	
+}

@@ -1,0 +1,20 @@
+package webflows;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class BookChair{
+	
+    WebDriver driver;
+	
+	By ChairResults = By.className("/html/body/app-root/bmf-layout/div[2]/product-catalogue/div[3]/div[2]/div[1]/div/button/span/ul/div/b\r\n");
+	
+	By AddToCart = By.xpath("_ngcontent-rfl-c19");
+	
+	WebElement searchItemByText = driver.findElement(By.xpath("//*[@id='popover-search']/div/div/ul/li[1]/a/span[contains(text()='Some text')]"));
+	
+	
+	/html/body/app-root/bmf-layout/div[2]/selected-product/div/div[1]/div[1]/div[1]/div[3]/button[2]
+	
+	
+}

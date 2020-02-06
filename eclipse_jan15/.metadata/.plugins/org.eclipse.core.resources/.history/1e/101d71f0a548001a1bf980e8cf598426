@@ -1,0 +1,18 @@
+package webflows;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class BookChair{
+	
+    WebDriver driver;
+	
+	By ChairResults = By.className("/html/body/app-root/bmf-layout/div[2]/product-catalogue/div/div/div/div[3]/div[2]/div/div[1]/div/button/span/ul/div/b\r\n");
+	
+	
+	
+	
+	
+	
+	
+}

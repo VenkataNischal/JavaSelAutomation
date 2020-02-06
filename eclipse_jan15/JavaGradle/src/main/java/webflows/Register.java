@@ -1,0 +1,72 @@
+package webflows;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Register {
+	
+	WebDriver driver;
+	
+	By CreateYourAccount = By.name("_ngcontent-iesc12");
+	
+	By EnterFullName = By.name("//*[@id='name']");
+	
+    By MobileNumber = By.id("//*[@id='mobileNo']");
+    
+    By Email = By.id("//*[@id='email']");
+    
+    By Password = By.id("//*[@id='password']");
+    
+    By Register = By.xpath("//input[@type='submit']");
+    
+    By Clear = By.xpath("//input[@type='clear']");
+	
+	public Register(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+	
+	public void clickOnCreateourAccount()
+	
+	{
+		driver.findElement(CreateYourAccount).click();
+		
+	}
+	
+	public void EnterFullName()
+	
+	{
+		driver.findElement(EnterFullName).sendKeys("Venkata");
+	}
+	
+    public void EnterMobileNumber()
+	
+	{
+		driver.findElement(MobileNumber).sendKeys("4545454545");
+	}
+    
+    public void EnterEmail()
+	
+	{
+		driver.findElement(Email).sendKeys("4545454545");
+	}
+    
+     public void Enterpassword()
+	
+	{
+		driver.findElement(Password).sendKeys("January2020");
+	}
+     
+     public void RegisterBt()
+     
+     {
+    	 driver.findElement(Register).click();
+     }
+     
+      public void Clear()
+     
+     {
+    	 driver.findElement(Clear).click();
+     }	 
+
+}
